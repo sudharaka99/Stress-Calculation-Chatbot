@@ -3,107 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Your Website</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Chatbot in PHP | CampCodes</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <style>
-        /* Add your additional styles here for better chat experience */
-        .wrapper {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .chat-box {
-            max-height: 300px;
-            overflow-y: auto;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background: #f9f9f9;
-        }
-
-        .message {
-            margin: 10px;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        .user {
-            background: #007bff;
-            color: #fff;
-            text-align: right;
-        }
-
-        .bot {
-            background: #f1f1f1;
-            color: #333;
-        }
-
-        .answer-options {
-            display: flex;
-            flex-wrap: wrap;
-            margin-top: 10px;
-        }
-
-        .answer-button {
-            margin: 3px;
-            padding: 5px 10px;
-            font-size: 12px;
-            background: #007bff;
-            color: #fff;
-            border: 1px solid #007bff;
-            border-radius: 3px;
-            cursor: pointer;
-            outline: none;
-        }
-
-        .typing-field {
-            display: flex;
-            align-items: center;
-            margin-top: 10px;
-        }
-
-        .input-data {
-            flex: 1;
-            margin-right: 10px;
-        }
-
-        .input-data input {
-            width: 100%;
-            padding: 8px;
-            font-size: 14px;
-            border: 1px solid #ddd;
-            border-radius: 3px;
-            outline: none;
-        }
-
-        .input-data button {
-            padding: 8px 15px;
-            font-size: 14px;
-            background: #007bff;
-            color: #fff;
-            border: 1px solid #007bff;
-            border-radius: 3px;
-            cursor: pointer;
-            outline: none;
-        }
-
-        .final-message {
-            margin-top: 20px;
-            font-weight: bold;
-        }
-
-        .hidden {
-            display: none;
-        }
-    </style>
 </head>
 <body>
 
@@ -112,7 +15,7 @@
 </header>
 
         <div class="wrapper">
-            <div class="title">Simple Online Chatbot</div>
+            <div class="title">Calculate StressLevel Chatbot</div>
             <div class="form">
                 <div class="chat-box" id="chatBox">
                     <!-- Chat messages will be displayed here -->
@@ -130,11 +33,6 @@
             </div>
         </div>
     </div>
-
-
-<footer>
-    <p>&copy; 2024 Your Website. All rights reserved.</p>
-</footer>
 
 <script>
     $(document).ready(function () {
