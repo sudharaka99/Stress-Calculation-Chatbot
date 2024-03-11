@@ -10,26 +10,26 @@
 </head>
 <body>
 
-
-        <div class="wrapper">
-            <div class="title">Calculate StressLevel Chatbot</div>
-            <div class="form">
-                <div class="chat-box" id="chatBox">
-                    <!-- Chat messages will be displayed here -->
-                </div>
-                <div class="answer-options" id="answerOptions">
-                    <!-- Answer options will be displayed here -->
-                </div>
-                <div class="typing-field hidden">
-                    <div class="input-data">
-                        <input id="user-answer" type="text" placeholder="Type your answer here..." required>
-                    </div class="button">
-                    <button id="send-btn">Send</button>
-                </div>
-                <div class="final-message hidden" id="finalMessage"></div>
+<div class="wrapper">
+    <div class="title">Calculate StressLevel Chatbot</div>
+    <div class="form">
+        <div class="chat-box" id="chatBox">
+            <!-- Chat messages will be displayed here -->
+        </div>
+        <div class="answer-options" id="answerOptions">
+            <!-- Answer options will be displayed here -->
+        </div>
+        <div class="typing-field hidden">
+            <div class="input-data">
+                <input id="user-answer" type="text" placeholder="Type your answer here..." required>
+            </div>
+            <div class="button">
+                <button id="send-btn">Send</button>
             </div>
         </div>
+        <div class="final-message hidden" id="finalMessage"></div>
     </div>
+</div>
 
 <script>
     $(document).ready(function () {
@@ -57,6 +57,8 @@
         function displayMessage(message, sender) {
             var chatMessage = '<div class="message ' + sender + '">' + message + '</div>';
             $("#chatBox").append(chatMessage);
+            // Scroll the chat box to the bottom
+            $("#chatBox").scrollTop($("#chatBox")[0].scrollHeight);
         }
 
         function displayQuestion() {
@@ -116,7 +118,7 @@
                     $(".answer-options, #user-answer, #send-btn").addClass('hidden');
                     displayStressLevel();
                     $("#user-answer").prop("disabled", true);
-                    setTimeout(function() {
+                    setTimeout(function () {
                         location.reload(); // Refresh the page after a short delay
                     }, 8000);
                 }
@@ -137,7 +139,7 @@
                     displayMessage("Thank you for your time!", 'bot');
                     $(".answer-options, .typing-field, #send-btn").addClass('hidden');
                     $(".input-data input").prop("disabled", true).addClass('hidden');
-                    setTimeout(function() {
+                    setTimeout(function () {
                         location.reload(); // Refresh the page after a short delay
                     }, 8000);
                 }
