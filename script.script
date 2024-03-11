@@ -1,0 +1,3 @@
+document.getElementById('clickMeButton').addEventListener('click', function() {
+    document.getElementById('output').innerHTML = 'Button Clicked!';
+});
