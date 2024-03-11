@@ -23,8 +23,8 @@
             <div class="input-data">
                 <input id="user-answer" type="text" placeholder="Type your answer here..." required>
             </div>
-            <div>
-                <button id="send-btn">Send</button>
+            <div class="button">
+                <button id="send-btn" class="answer-button">Send</button>
             </div>
         </div>
         <div class="final-message hidden" id="finalMessage"></div>
