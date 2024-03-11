@@ -195,6 +195,19 @@
     outline: none;
 }
 
+.button {
+    margin: 3px;
+    padding: 5px 10px;
+    font-size: 12px;
+    background: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+}
+
+
 .typing-field {
     display: flex;
     align-items: center;
