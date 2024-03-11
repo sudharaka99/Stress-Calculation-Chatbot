@@ -197,7 +197,7 @@
 
 .button {
     margin: 3px;
-    padding: 3px 8px;
+    padding: 3px 6px;
     font-size: 12px;
     background: #007bff;
     color: #fff;
@@ -222,7 +222,7 @@
 
 .input-data input {
     width: 100%;
-    padding: 8px;
+    padding: 6px;
     font-size: 14px;
     border: 1px solid #ddd;
     border-radius: 3px;
