@@ -23,7 +23,7 @@
             <div class="input-data">
                 <input id="user-answer" type="text" placeholder="Type your answer here..." required>
             </div>
-            <div class="button">
+            <div>
                 <button id="send-btn">Send</button>
             </div>
         </div>
