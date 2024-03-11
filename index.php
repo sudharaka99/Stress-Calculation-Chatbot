@@ -23,7 +23,7 @@
                 <div class="typing-field hidden">
                     <div class="input-data">
                         <input id="user-answer" type="text" placeholder="Type your answer here..." required>
-                    </div>
+                    </div class="button">
                     <button id="send-btn">Send</button>
                 </div>
                 <div class="final-message hidden" id="finalMessage"></div>
